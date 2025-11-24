@@ -1,1 +1,29 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tervetuloa sivustolle</h1>
+    <p>Tämä on esimerkkisivu, jossa on otsikko, kappale, linkki ja kuva.</p>
+    <a href="https://www.example.com">Siirry esimerkkisivulle</a>
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="Esimerkkikuva" width="300">
+        <figcaption>Kuva: Wikimedia Commons, CC BY-SA 4.0</figcaption>
+    </figure>
+    <h2>Satunnaislukugeneraattori</h2>
+ 
+<button onclick="naytaNumero()">Anna satunnainen numero</button>
+ 
+<p id="tulos"></p>
+    <script>
+function naytaNumero() {
+    const numero = Math.floor(Math.random() * 100) + 1;
+    document.getElementById("tulos").innerText = "Satunnainen numero: " + numero;
+}
+</script>
+</body>
+</html>
